@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: #460000;
+}
+
+.kotak_gambar {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    background-color: #6d0000;
+    position: relative;
+}
+
+.gambar_promo {
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    margin: 25px;
+}
+
+.kotak_animasi_besar {
+    width: 450px;
+    height: 500px;
+    background-color: white;
+    position: absolute;
+    margin: 0px 25px;
+    animation-name: animasi_besar;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animasi_besar {
+    from {background-color: red;}
+    to {background-color: #6d0000;}
+}
+
+.kotak_animasi_kecil_1 {
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    position: absolute;
+    animation-name: animasi_kecil_1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.kotak_animasi_kecil_2 {
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    position: absolute;
+    animation-name: animasi_kecil_2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.kotak_2 {
+    animation-delay: 0.05s;
+}
+
+.kotak_3 {
+    animation-delay: 0.10s;
+}
+
+.kotak_4 {
+    animation-delay: 0.15s;
+}
+
+.kotak_5 {
+    animation-delay: 0.20s;
+}
+
+@keyframes animasi_kecil_1 {
+    0% {left: 0%; top: 0%;}
+    50% {left: 0%; top: 95%;}
+    100% {left: 0%; top: 0%;}
+}
+
+@keyframes animasi_kecil_2 {
+    0% {left: 95%; top: 0%;}
+    50% {left: 95%; top: 95%;}
+    100% {left: 95%; top: 0%;}
+}
+
+.menu {
+    margin: auto;
+    width: 500px;
+}
+
+.daftar_login {
+    display: block;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    background-color: #c80000;
+    border-radius: 10%;
+    color: white;
+}
